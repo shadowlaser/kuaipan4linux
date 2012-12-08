@@ -1,9 +1,10 @@
-
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
-
+#include "base64.h"
+#include "url_encode.h"
+#include "hmac_sha1.h"
 #include "kuaipan.h"
 
 extern int URLEncode(
