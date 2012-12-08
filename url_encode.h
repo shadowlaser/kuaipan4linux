@@ -11,6 +11,7 @@
 #ifndef __URL_ENCODE__
 #define __URL_ENCODE__
 #define NON_NUM '0'
+int hex2num(char c);
 /**
  * @brief URLEncode 对字符串URL编码
  *
@@ -23,8 +24,6 @@
  *            0: 解码失败.
  */
 int URLEncode(const char* str, const int strSize, char* result, const int resultSize);
-
-int hex2num(char c);
 
 /**
  * @brief URLDecode 对字符串URL解码,编码的逆过程

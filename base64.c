@@ -3,7 +3,7 @@
 #include <malloc.h>
 #include <stdlib.h>
 #include "base64.h"
-
+static const char base[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="; 
 /*
 int main(int argc, char* argv[]) 
 { 
