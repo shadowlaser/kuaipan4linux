@@ -1,0 +1,9 @@
+obj=oauth_nonce
+$(obj):$(obj).o
+	gcc -o $(obj) $(obj).o
+$(obj).o:$(obj).s
+	gcc -c $(obj).s
+$(obj).s:$(obj).c
+	gcc -S $(obj).c -g
+clean:
+	rm -f $(obj).o $(obj).s
